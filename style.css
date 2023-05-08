@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0
+}
+
+.header{
+    background-color: #faa;
+    display: flex;
+    height: 9vh;
+    align-items: center;
+}
+.header--button{
+    width: 10%;
+    height: 50%;
+}
+.header--title{
+    font-size: 100%
+}

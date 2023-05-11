@@ -4,18 +4,29 @@
         <title>Weather app</title>
         <meta name="utf-8">
         <link rel="stylesheet" href="style.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Nunito:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3ff74f8a3b.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="main.js" defer></script>
     </head>
     <body>
         <header class="header">
-            <button class="header--button"></button>
-            <h1 class="header--title">Titulo</h1>
-            <div class="header--container-img"><img class="header--img"></div>
+            <button class="header--button"><i class="fa-solid fa-bars"></i></button>
+            <h1 class="header--title">Clima</h1>
+            <div class="header--container-img"><img class="header--img" src="images/placeholder.jpg"></div>
         </header>
-        <article>
-            <p class="article--city-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam, sapiente molestias, magni et ducimus sint blanditiis quo itaque unde voluptates nisi praesentium minus recusandae saepe beatae, nobis mollitia officia.</p>
-            <div class="article--container-img"><img class="article-img"></div>
-            <p class="article--weather-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, qui. Mollitia facilis eveniet officiis possimus commodi est ducimus repellat eius architecto. Ad laborum illo tenetur hic? Veniam necessitatibus officia vero?</p>
-            <p class="article--weather-temp">0°</p>
+        <article class="article">
+            <h2 class="article--city-name"></h2>
+            <h3 class="article--city-state">Lorem</h3>
+            <div class="article--container-img">
+                <img class="article-img" src="">
+                <p class="article--weather-temp">0º</p>
+            </div>
+                <p class="article--weather-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, qui. Mollitia facilis eveniet officiis possimus commodi est ducimus repellat eius architecto. Ad laborum illo tenetur hic? Veniam necessitatibus officia vero?</p>
         </article>
+        <div class="loader--container">
+            <div class="custom-loader"></div>
+        </div>
     </body>
 </html>

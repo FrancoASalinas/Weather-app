@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #A43461;
+  font-family: "Nunito";
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #52A2E4;
+  display: none;
+  height: 6em;
+}
+.header__title {
+  text-align: center;
+  vertical-align: center;
+  font-size: 4em;
+  width: 100%;
+}
+
+.article {
+  background-image: linear-gradient(to bottom, #59c7cb, #5dd0d5, #60dade, #64e3e8, #68edf2);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  width: 100%;
+  height: 100%;
+}
+.article__city__name {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 5px 0;
+  font-size: 5em;
+}
+.article__city__state {
+  width: 100%;
+  text-align: center;
+  font-size: 4em;
+}
+.article img {
+  min-width: 200px;
+  height: auto;
+}
+.article__weather-temp {
+  font-size: 4em;
+  text-align: center;
+}
+
+.loader__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #59c7cb;
+}
+
+.custom-loader {
+  --d:44px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  color: #3656F4;
+  box-shadow: calc(1 * var(--d)) calc(0 * var(--d)) 0 0, calc(0.707 * var(--d)) calc(0.707 * var(--d)) 0 2px, calc(0 * var(--d)) calc(1 * var(--d)) 0 4px, calc(-0.707 * var(--d)) calc(0.707 * var(--d)) 0 6px, calc(-1 * var(--d)) calc(0 * var(--d)) 0 8px, calc(-0.707 * var(--d)) calc(-0.707 * var(--d)) 0 10px, calc(0 * var(--d)) calc(-1 * var(--d)) 0 12px;
+  animation: s7 0.5s infinite steps(8);
+}
+
+@keyframes s7 {
+  100% {
+    transform: rotate(1turn);
+  }
+}/*# sourceMappingURL=main.css.map */

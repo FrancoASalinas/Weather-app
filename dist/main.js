@@ -1,16 +1,16 @@
 //store DOM elements references in variables
-const cityName = document.querySelector('.article--city-name');
-const state = document.querySelector('.article--city-state');
-const temp = document.querySelector('.article--weather-temp');
+const cityName = document.querySelector('.article__city__name');
+const state = document.querySelector('.article__city__state');
+const temp = document.querySelector('.article__weather-temp');
 const img = document.querySelector('.article-img');
 const header = document.querySelector('.header');
 const article = document.querySelector('.article');
-const loader = document.querySelector('.loader--container')
+const loader = document.querySelector('.loader__container')
 //store url and key references in vaariables
 const url = 'http://api.weatherapi.com/v1';
 const key = '20a0dec8e429449684c184436230505';
 //call the API using fetch
-fetch(`${url}/current.json?&key=${key}&q=London`)
+fetch(`${url}/current.json?&key=${key}&q=auto:ip`)
 .then(response => {     //when the promise is fulfilled
 
     if(!response.ok){ //if the response isn't ok throw error

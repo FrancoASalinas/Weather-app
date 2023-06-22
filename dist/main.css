@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  color: #A43461;
   font-family: "Nunito";
   box-sizing: border-box;
 }
@@ -9,30 +8,47 @@
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .header {
   background-color: #52A2E4;
+  color:#244763;
   display: none;
   height: 6em;
 }
 .header__title {
   text-align: center;
-  vertical-align: center;
   font-size: 4em;
   width: 100%;
 }
 
 .article {
-  background-image: linear-gradient(to bottom, #59c7cb, #5dd0d5, #60dade, #64e3e8, #68edf2);
+  /* background-image: linear-gradient(to bottom, #59c7cb, #5dd0d5, #60dade, #64e3e8, #68edf2); */
+  background-color: #425463;
+  color: #A1CCF0;
   display: none;
   flex-direction: column;
   align-items: center;
   gap: 6rem;
   width: 100%;
   height: 100%;
+  font-size: 1rem;
 }
+
+.article__city{
+  position: relative
+}
+
+.article__weather-temp {
+  font-size: 4em;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6rem;
+}
+
 .article__city__name {
   width: 100%;
   text-align: center;
@@ -47,10 +63,6 @@ body {
 .article img {
   min-width: 200px;
   height: auto;
-}
-.article__weather-temp {
-  font-size: 4em;
-  text-align: center;
 }
 
 .loader__container {
@@ -77,3 +89,9 @@ body {
     transform: rotate(1turn);
   }
 }/*# sourceMappingURL=main.css.map */
+
+@media (max-width: 380px){
+  .article{
+    font-size:0.8rem
+  }
+}
